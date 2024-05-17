@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+}
+body {
+    width: 1440px;
+    background-color: hsl(30, 54%, 90%);
+    font-size: 13px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: outfit;
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+.container {
+    width: 600px;
+    height: 1350px;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    
+    
+     
+}
+
+.inside {
+  
+  margin-top: 100px;
+  width: 525px;
+  /* border: 1px solid black; */
+  margin: auto;
+  padding-top: 30px;
+  text-align: left;
+  overflow: hidden;
+  
+}
+
+img{
+  width: 525px;
+  border-radius: 10px;
+}
+
+h1{
+    font-family: Young Serif;
+    font-size: 33px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: hsl(24, 5%, 18%);
+}
+
+p{
+    margin-bottom: 25px;
+}
+
+.preparation {
+    width: 525px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: hsl(330, 100%, 98%);
+}
+
+span{
+    font-weight: 700;
+    
+}
+h4{
+    display: inline-block;
+    font-size: 16px;
+    color: hsl(332, 51%, 32%);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.ulPreparation {
+    list-style: none;
+    margin-left: 12px;
+}
+.ulPreparation li::before{
+    position: absolute;
+    content: "\2022";
+    color: hsl(332, 51%, 32%);
+    margin-left: -27px;
+    font-weight: 700;
+   
+}
+ul{
+    line-height: 2;
+    margin-top: 5px;
+    list-style-type: square;  
+}
+
+
+.ulIngre {
+   list-style: none;
+   margin-left: -10px;
+   font-size: 13px;
+   font-weight: 400;
+   
+}
+
+.ulIngre li::before {
+    position: absolute;
+    content: "\2022";
+    color: hsl(14, 45%, 36%);
+    margin-left: -27px;
+    font-weight: 700;
+}
+h3{
+    font-family: Young Serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+hr{
+    margin-top: 10px;
+    height: 10px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+ol {
+  
+  list-style: none; 
+  counter-reset: li;
+  
+ 
+  
+  
+  
+}
+ol li{
+    margin-bottom: 10px;
+    margin-left: -35px;
+    
+   
+}
+ol li::before {
+    counter-increment: li;
+    content: counter(li) ".";
+    color: hsl(14, 45%, 36%);
+    display: flex;
+    font-weight: 700;
+    margin-right: 15px;
+    
+}
+
+ol li p{
+    margin-left: 27px;
+    margin-top: -16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: -15px;
+}
+ th {
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+}
+
+.fatborda{
+    border-style: none;
+}
+
+
+.colun1{
+    
+    font-weight: 400;
+     padding-left: 25px;
+}
+.colun{
+    color: hsl(14, 45%, 36%);
+    padding-left: 50px ;
+}
+
+/* .seis {
+    margin-bottom: 20px;
+} */
