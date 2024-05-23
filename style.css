@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+    font-size: 15px;
+    width: 1440px;
+    background-color: hsl(0, 0%, 98%);
+
+}
+
+header {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+.title1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+.title2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
+    /* align-items: center; */
+    justify-content: center;
+    /* align-content: center; */
+    grid-template-areas: "a1 a2 a4"
+        "a3 a3 a3";
+    margin-bottom: 80px;
+
+}
+
+.square {
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* border-top: 5px solid blue; */
+    box-shadow: 1px 8px 10px 3px hsl(234, 12%, 34%, 0.1);
+}
+
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    grid-area: a1;
+    margin-top: 150px;
+}
+
+.builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    grid-area: a2;
+}
+
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-area: a3;
+    margin-top: -150px;
+}
+
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    grid-area: a4;
+    margin-top: 150px;
+}
+
+.text {
+    width: 299px;
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+h3 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+img {
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        width: 375px;
+        height: 1360px;
+        
+
+    }
+
+    header {
+        width: 85%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        margin-top: -130px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "a1"
+            "a2"
+            "a3"
+            "a4";
+
+    }
+
+    .square {
+        width: 90%;
+        display: block;
+
+    }
+    .text {
+        display: inline-block;
+        width: 260px;
+
+
+    }
+
+    .karma {
+        margin-top: 5px;
+    }
+
+    .calculator {
+        margin-top: 5px;
+    }
+}
